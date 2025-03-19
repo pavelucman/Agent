@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app/
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir fastapi uvicorn sqlalchemy psycopg2 requests cryptography aiohttp
 
 # Expose the FastAPI port
 EXPOSE 8000
